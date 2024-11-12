@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="card-container">
+        <h1>Weather App</h1>
+        <div class="card" id="flip-card">
+            <div class="front-container">
+                <div class="left-1">
+                    <form id="weatherForm">
+                        <label>Drop your City <br />and<br /> get your weather👇</label><br /><br />
+                        <input type="text" id="cityValue" placeholder="Enter city name" required>
+                        <br />
+                        <button type="submit">Get Weather</button>
+                    </form>  
+                </div>
+                <div class="right-1">
+                    <img src="front.gif" height="300px" width="300px">
+                </div>
+            </div>
+            <div class="back-container">
+                <div class="left-2">
+                    <div class="inside-left">
+                        <bold><p id="dateDisplay"></p></bold>
+                        <bold><p class="cityValue"></p></bold> <!-- Display city name here -->
+                        <p class="temp" id="tmpt"></p> 
+                        <div id="weatherInfoDivHourly" >
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="inside-right">
+                        <p>Weather</p>
+                        <p class="desc"></p> <!-- Weather description -->
+                        <p class="windspeed"></p> <!-- Wind speed -->
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="right-2">
+                    <img src="snowy.gif" id="weatherGif" height="300px" width="300px">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
